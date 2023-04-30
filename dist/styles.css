@@ -851,6 +851,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:grid {
+    display: grid;
+  }
+
   .md\:h-board {
     height: 90vh;
   }
