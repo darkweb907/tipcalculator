@@ -634,6 +634,11 @@ video {
   min-width: 100%;
 }
 
+.min-w-fit {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
 .translate-y-2\/3 {
   --tw-translate-y: 66.666667%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -673,6 +678,10 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .rounded {
@@ -851,6 +860,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:mt-9 {
+    margin-top: 2.25rem;
+  }
+
   .md\:grid {
     display: grid;
   }
@@ -881,5 +894,9 @@ video {
 
   .md\:p-4 {
     padding: 1rem;
+  }
+
+  .md\:p-6 {
+    padding: 1.5rem;
   }
 }
