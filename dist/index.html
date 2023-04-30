@@ -1,0 +1,111 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body class="p-6">
+		<div
+			class="bg-Lightgrayishcyan w-screen container mx-auto h-board grid place-content-center">
+			<div
+				class="w bg-Verylightgrayishcyan p-9 min-w-full md:min-w-well md:p-4 gap-6 flex flex-col md:flex-row justify-between border rounded-md">
+				<div class="input md:w-1/2" id="input">
+					<h1 class="text-base font-bold text-Darkgrayishcyan">Bills</h1>
+					<form class="relative">
+						<img
+							class="absolute top-4 transform translate-y-2/3 left-2"
+							src="../images/icon-dollar.svg"
+							alt="" />
+						<input
+							class="w-full md:w-4/5 rounded-lg h-10 shadow-lg mt-4 text-end text-veryDarkCyan cursor-pointer font-bold"
+							type="number"
+							id="bills"
+							value="" />
+					</form>
+					<div class="button my-5">
+						<h2>Select tips</h2>
+						<div class="type grid grid-cols-2 md:grid-cols-3 gap-4">
+							<input
+								class="tips font-bold bg-veryDarkCyan cursor-pointer hover:bg-mouth hover:text-veryDarkCyan text-white py-1 rounded"
+								type="button"
+								value="5%" />
+							<input
+								class="tips font-bold bg-veryDarkCyan cursor-pointer hover:bg-mouth hover:text-veryDarkCyan text-white py-1 rounded"
+								type="button"
+								value="10%" />
+							<input
+								class="tips font-bold bg-veryDarkCyan cursor-pointer hover:bg-mouth hover:text-veryDarkCyan text-white py-1 rounded"
+								type="button"
+								value="15%" />
+							<input
+								class="tips font-bold bg-veryDarkCyan cursor-pointer hover:bg-mouth hover:text-veryDarkCyan text-white py-1 rounded"
+								type="button"
+								value="25%" />
+							<input
+								class="tips font-bold bg-veryDarkCyan cursor-pointer hover:bg-mouth hover:text-veryDarkCyan text-white py-1 rounded"
+								type="button"
+								value="50%" />
+							<input
+								class="tips font-bold text-mouth py-1 rounded cursor-pointer hover:border-2 hover:border-mouth hover:text-veryDarkCyan"
+								type="button"
+								value="Custom" />
+						</div>
+					</div>
+					<div class="people my-3 relative">
+						<h1 class="text-base font-bold text-Darkgrayishcyan">
+							Number of people
+						</h1>
+						<img
+							class="absolute top-1/2 transform translate-y-2/3 left-2"
+							src="../images/icon-person.svg"
+							alt="" />
+						<input
+							class="w-full md:w-4/5 rounded-lg h-10 shadow-lg mt-4 text-end text-veryDarkCyan cursor-pointer font-bold"
+							type="number"
+							id="person"
+							value="" />
+					</div>
+				</div>
+				<div
+					class="details w-full p-5 md:w-1/2 rounded-lg bg-veryDarkCyan"
+					id="details ">
+					<div class="flex justify-between items-center my-9" id="tipCal">
+						<h2 class="text-sm text-white font-bold">
+							Tip Amount
+							<span class="block text-sm text-mouth font-extralight"
+								>/ person</span
+							>
+						</h2>
+						<div class="flex items-center text-mouth">
+							<img src="../images/icon-dollar.svg" alt="" />
+							<h3 class="font-bold text-4xl ml-2" id="totper">0.00</h3>
+						</div>
+					</div>
+					<div class="flex justify-between items-center my-9" id="perpes">
+						<h2 class="text-sm text-white font-bold">
+							Total
+							<span class="block text-sm text-mouth font-extralight"
+								>/ person</span
+							>
+						</h2>
+						<div class="flex items-center text-mouth">
+							<img src="../images/icon-dollar.svg" alt="" />
+							<h3 class="font-bold text-4xl ml-2 topmon">0.00</h3>
+						</div>
+					</div>
+
+					<button
+						class="w-full mt-9 p-2 bg-mouth font-bold hover:bg-Lightgrayishcyan hover:text-mouth text-white reset">
+						Reset
+					</button>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
